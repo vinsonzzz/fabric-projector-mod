@@ -29,6 +29,10 @@ public class DisplayEntityRenderer<T extends DisplayEntity> implements BlockEnti
   }
 
   @Override
+  public int getRenderDistance() {
+    return 256;
+  }
+  @Override
   public void render(DisplayEntity blockEntity, float tickDelta, MatrixStack matrices,
       VertexConsumerProvider vertexConsumers, int light, int overlay) {
 
